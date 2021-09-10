@@ -5,11 +5,11 @@
   </head>
   <script type="text/javascript" src="https://raw.fastgit.org/paruam-project/cdn/main/getParam.js"></script>
   <script type="text/javascript">
-  function runUrl(panurl) {
+  function runUrl() {
     var str_param = getQueryVariable("url");
     if (str_param != "") {
         var  sid=document.getElementById("body");
-        sid.innerText="<iframe src=\"https://pan.baidu.com/s/" + str_param+"\"></iframe>";
+        sid.innerHTML="<iframe src=\"https://pan.baidu.com/s/" + str_param+"\"></iframe>";
     }else{
         alert("参数错误");
     }
