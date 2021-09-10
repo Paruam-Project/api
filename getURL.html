@@ -7,7 +7,7 @@
     function runUrl(panurl) {
       var str_param = getQueryVariable("url");
       if (str_param != "") {
-          var  sid=document.getElementsByName("body");
+          var  sid=document.getElementById("body");
           sid.innerText="<iframe src=\"https://pan.baidu.com/s/" + str_param+"\"></iframe>";
       }else{
           alert("参数错误");
@@ -15,6 +15,6 @@
     }
   </script>
   </head>
-  <body onload="runUrl()">
+  <body onload="runUrl()" id="body">
   </body>
 </html>
